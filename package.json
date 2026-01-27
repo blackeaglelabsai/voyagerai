@@ -1,0 +1,70 @@
+{
+  "name": "voyagerai",
+  "displayName": "VoyagerAI",
+  "description": "Convert technical articles into interactive Jupyter notebooks",
+  "version": "0.1.0",
+  "publisher": "BlackEagleLabsAI",
+  "engines": {
+    "vscode": "^1.108.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "chatParticipants": [
+      {
+        "id": "voyager.participant",
+        "name": "voyager",
+        "fullName": "Voyager",
+        "description": "Convert web articles to Jupyter notebooks",
+        "isSticky": true,
+        "commands": [
+          {
+            "name": "url",
+            "description": "Convert a URL to a Jupyter notebook"
+          },
+          {
+            "name": "models",
+            "description": "List available AI models for notebook generation"
+          }
+        ]
+      }
+    ]
+  },
+  "scripts": {
+    "build": "esbuild src/extension.ts --bundle --outfile=dist/extension.js --external:vscode --external:jsdom --format=cjs --platform=node",
+    "watch": "npm run build -- --watch",
+    "lint": "tsc --noEmit"
+  },
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/0xchamin/voyager"
+  },
+  "icon": "icon.png",
+  "extensionDependencies": [
+  "ms-toolsai.jupyter",
+  "GitHub.copilot-chat"
+  ],
+  "devDependencies": {
+    "@types/jsdom": "^27.0.0",
+    "@types/node": "^20.19.30",
+    "@types/turndown": "^5.0.6",
+    "@types/vscode": "^1.108.1",
+    "esbuild": "^0.20.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@mozilla/readability": "^0.6.0",
+    "axios": "^1.13.2",
+    "jsdom": "^27.4.0",
+    "turndown": "^7.2.2",
+    "turndown-plugin-gfm": "^1.0.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

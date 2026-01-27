@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# VS Code extension packages
+*.vsix
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/*
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# Test output
+test_voyager/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local
