@@ -2,7 +2,7 @@
   "name": "voyagerai",
   "displayName": "VoyagerAI",
   "description": "Convert technical articles into interactive Jupyter notebooks",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "BlackEagleLabsAI",
   "engines": {
     "vscode": "^1.108.0"
