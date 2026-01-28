@@ -1,31 +1,37 @@
-# Voyager
+# Voyager AI
 
 **Transform technical articles into interactive Jupyter notebooks with AI-powered learning.**
 
-<screenshot required: hero image showing article converted to notebook>
+
+![Invoke Voyager via Co-Pilot chat `@voyager /url http://example.com/ ](./images/invoke_voyager.png)
+
 
 ## Features
 
 ### 📥 Convert Any Article to a Notebook
 Paste a URL and Voyager fetches the article, extracts content, downloads images, and generates a Jupyter notebook — all within VS Code.
 
-<screenshot required: @voyager /url command in action>
+![Invoke Voyager via Co-Pilot chat `@voyager /url http://example.com/ ](./images/invoke_voyager.png)
 
-### 🤖 Ask Questions with Full Context
-Use `# %ask` cells to query AI about the article. The LLM receives all content above the cell as context.
-
-<screenshot required: # %ask cell with AI response>
 
 ### 🔄 Choose Your Model
 List available models with `@voyager /models` and specify your preferred LLM per question.
 
-<screenshot required: @voyager /models output>
+![Invoke Voyager via Co-Pilot chat `@voyager /url http://example.com/ ](./images/co-pilot-models.png)
+
+### 🤖 Ask Questions with Full Context
+Use `# %ask` cells to query AI about the article. The LLM receives all content above the cell as context.
+
+
+![Invoke Voyager via Co-Pilot chat `@voyager /url http://example.com/ ](./images/call_invoke.png)
+
+![Invoke Voyager via Co-Pilot chat `@voyager /url http://example.com/ ](./images/answer-from-model.png)
 
 ## Installation
 
 1. Open VS Code
 2. Go to Extensions (`Cmd+Shift+X` / `Ctrl+Shift+X`)
-3. Search for "Voyager"
+3. Search for "Voyager AI"
 4. Click **Install**
 
 ## Requirements
@@ -52,8 +58,6 @@ List available models with `@voyager /models` and specify your preferred LLM per
 ### List Available Models
 
 `@voyager /models`
-
-Copied!
 
 ## Extension Settings
 
