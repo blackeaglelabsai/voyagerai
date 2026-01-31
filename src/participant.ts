@@ -35,6 +35,8 @@ const handleModelsCommand = async (
   for (const model of models) {
     stream.markdown(`- \`${model.id}\` (${model.vendor}/${model.family})\n`)
   }
+  stream.markdown('\n\n*Note: Some models may fail if not available in your subscription.*')
+
 }
 
 const handleUrlCommand = async (
